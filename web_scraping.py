@@ -50,6 +50,6 @@ for jobs in job_boxes_items:
     date = jobs.find("p", class_="inqtnx").text
     
     for i in jobs:
-        file.writerow([company, title, location, mod, date])
+        file.writerow([company, title, location, date])
 
 browser.quit()
